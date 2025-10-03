@@ -1,4 +1,15 @@
 // lib/types/investigations.ts
+export interface InvestigationPage {
+  id: number;
+  page_number: number;
+  title: string;
+  content: string;
+  image: string | null;
+  source: string;
+  created_at: string;
+  updated_at: string;
+}
+
 export interface Investigation {
   id: number;
   title: string;
@@ -9,18 +20,7 @@ export interface Investigation {
   created_at: string;
   is_published?: boolean;
   updated_at?: string;
-  pages?: InvestigationPage[];
-}
-
-export interface InvestigationPage {
-  id: number;
-  page_number: number;
-  title: string;
-  content: string;
-  image: string | null;
-  source: string;
-  created_at: string;
-  updated_at: string;
+  pages?: InvestigationPage[]; // Make pages optional
 }
 
 export interface PaginatedInvestigationsResponse {

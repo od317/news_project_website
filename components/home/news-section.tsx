@@ -14,13 +14,13 @@ export default function NewsSection({ articles, hasMore }: NewsSectionProps) {
   return (
     <section>
       <div className="flex items-center justify-between mb-8">
-        <h2 className="text-3xl font-bold tracking-tight">Latest News</h2>
+        <h2 className="text-3xl font-bold tracking-tight">آخر الأخبار</h2>
         {hasMore && (
           <Link 
             href="/news" 
             className="text-primary hover:text-primary/80 font-medium flex items-center gap-2"
           >
-            View All News
+            عرض جميع الأخبار
             <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
@@ -44,7 +44,7 @@ export default function NewsSection({ articles, hasMore }: NewsSectionProps) {
                     />
                   ) : (
                     <div className="w-full h-full bg-gradient-to-br from-muted to-muted/50 flex items-center justify-center">
-                      <span className="text-muted-foreground">News Image</span>
+                      <span className="text-muted-foreground">صورة الخبر</span>
                     </div>
                   )}
                 </div>
@@ -60,7 +60,7 @@ export default function NewsSection({ articles, hasMore }: NewsSectionProps) {
                   <div className="flex items-center justify-between text-xs text-muted-foreground">
                     <span className="font-medium">{article.author_name}</span>
                     <span>
-                      {new Date(article.published_at).toLocaleDateString('en-US', {
+                      {new Date(article.published_at).toLocaleDateString('ar-EG', {
                         month: 'short',
                         day: 'numeric',
                         year: 'numeric'

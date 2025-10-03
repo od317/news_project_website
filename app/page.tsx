@@ -23,8 +23,8 @@ const emptyInvestigationsResponse: PaginatedInvestigationsResponse = {
 };
 
 export const metadata: Metadata = {
-  title: "Latest News & In-Depth Investigations",
-  description: "Stay informed with breaking news, exclusive investigations, and comprehensive reports from trusted journalists worldwide.",
+  title: "آخر الأخبار والتحقيقات المتعمقة",
+  description: "ابق على اطلاع بآخر الأخبار العاجلة، التحقيقات الحصرية، والتقارير الشاملة من صحفيين موثوقين حول العالم.",
 };
 
 export default async function HomePage() {
@@ -38,8 +38,8 @@ export default async function HomePage() {
   const newsData = newsResult.status === 'fulfilled' ? newsResult.value : emptyNewsResponse;
   const investigationsData = investigationsResult.status === 'fulfilled' ? investigationsResult.value : emptyInvestigationsResponse;
 
-  console.log('News Data:', newsData);
-  console.log('Investigations Data:', investigationsData);
+  console.log('بيانات الأخبار:', newsData);
+  console.log('بيانات التحقيقات:', investigationsData);
 
   // Safe access to results with fallbacks
   const newsArticles = newsData?.results || [];

@@ -15,11 +15,11 @@ export default function InvestigationsSection({ investigations, hasMore }: Inves
       <div className="flex items-center justify-between mb-8">
         <div>
           <div className="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary mb-2">
-            Exclusive
+            حصري
           </div>
-          <h2 className="text-3xl font-bold tracking-tight">In-Depth Investigations</h2>
+          <h2 className="text-3xl font-bold tracking-tight">تحقيقات متعمقة</h2>
           <p className="text-muted-foreground mt-2">
-            Deep-dive reports and comprehensive analysis
+            تقارير شاملة وتحليلات معمقة
           </p>
         </div>
         {hasMore && (
@@ -27,7 +27,7 @@ export default function InvestigationsSection({ investigations, hasMore }: Inves
             href="/investigations" 
             className="text-primary hover:text-primary/80 font-medium flex items-center gap-2"
           >
-            All Investigations
+            جميع التحقيقات
             <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
@@ -46,7 +46,7 @@ export default function InvestigationsSection({ investigations, hasMore }: Inves
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-2 h-2 bg-primary rounded-full"></div>
                 <span className="text-xs font-medium text-primary uppercase tracking-wide">
-                  Investigation
+                  تحقيق
                 </span>
               </div>
               
@@ -60,9 +60,9 @@ export default function InvestigationsSection({ investigations, hasMore }: Inves
               
               <div className="space-y-2">
                 <div className="flex items-center justify-between text-sm text-muted-foreground">
-                  <span>Pages: {investigation.total_pages}</span>
+                  <span>صفحات: {investigation.total_pages}</span>
                   <span>
-                    {new Date(investigation.published_at).toLocaleDateString()}
+                    {new Date(investigation.published_at).toLocaleDateString('ar-EG')}
                   </span>
                 </div>
                 <p className="text-xs text-muted-foreground line-clamp-2">

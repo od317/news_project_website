@@ -12,25 +12,24 @@ export default function HeroSection() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
             </span>
-            Trusted Journalism Since 2024
+            صحافة موثوقة منذ 2024
           </div>
 
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-            Stay{" "}
+            ابق{" "}
             <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
-              Informed
+              مطلعاً
             </span>
-            , Stay{" "}
+            ، ابق{" "}
             <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-              Empowered
+              متمكناً
             </span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Breaking news, exclusive investigations, and stories that matter. 
-            Your trusted source for comprehensive journalism.
+            أخبار عاجلة، تحقيقات حصرية، وقصص تهمك. مصدرك الموثوق للصحافة الشاملة.
           </p>
 
           {/* CTA Buttons */}
@@ -39,7 +38,7 @@ export default function HeroSection() {
               href="/news" 
               className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-semibold text-primary-foreground hover:bg-primary/90 transition-all duration-300 hover:scale-105 shadow-lg"
             >
-              Explore Latest News
+              استكشف آخر الأخبار
               <svg 
                 className="ml-2 h-5 w-5" 
                 fill="none" 
@@ -59,7 +58,7 @@ export default function HeroSection() {
               href="/investigations" 
               className="inline-flex items-center justify-center rounded-full border border-primary/20 bg-background px-8 py-4 text-lg font-semibold text-foreground hover:bg-accent transition-all duration-300 hover:scale-105"
             >
-              View Investigations
+              عرض التحقيقات
               <svg 
                 className="ml-2 h-5 w-5" 
                 fill="none" 
@@ -79,16 +78,16 @@ export default function HeroSection() {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 pt-16 max-w-2xl mx-auto">
             <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-foreground">100+</div>
-              <div className="text-sm text-muted-foreground">Daily Stories</div>
+              <div className="text-2xl md:text-3xl font-bold text-foreground">١٠٠+</div>
+              <div className="text-sm text-muted-foreground">قصة يومية</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-foreground">50+</div>
-              <div className="text-sm text-muted-foreground">Investigations</div>
+              <div className="text-2xl md:text-3xl font-bold text-foreground">٥٠+</div>
+              <div className="text-sm text-muted-foreground">تحقيق</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-foreground">24/7</div>
-              <div className="text-sm text-muted-foreground">Coverage</div>
+              <div className="text-2xl md:text-3xl font-bold text-foreground">٢٤/٧</div>
+              <div className="text-sm text-muted-foreground">تغطية</div>
             </div>
           </div>
         </div>

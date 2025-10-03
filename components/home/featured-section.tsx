@@ -1,5 +1,5 @@
 // components/home/featured-section.tsx
-import { NewsArticle } from "@/lib/types";
+import { NewsArticle} from "@/lib/types";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -16,12 +16,12 @@ export default function FeaturedSection({ articles }: FeaturedSectionProps) {
   return (
     <section className="container mx-auto px-4 py-12">
       <div className="flex items-center justify-between mb-8">
-        <h2 className="text-3xl font-bold tracking-tight">Featured Stories</h2>
+        <h2 className="text-3xl font-bold tracking-tight">قصص مميزة</h2>
         <Link 
           href="/news" 
           className="text-primary hover:text-primary/80 font-medium flex items-center gap-2"
         >
-          View All
+          عرض الكل
           <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
@@ -45,13 +45,13 @@ export default function FeaturedSection({ articles }: FeaturedSectionProps) {
               />
             ) : (
               <div className="w-full h-full bg-gradient-to-br from-primary/20 to-blue-600/20 flex items-center justify-center">
-                <span className="text-muted-foreground">Featured Story</span>
+                <span className="text-muted-foreground">قصة مميزة</span>
               </div>
             )}
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
               <div className="inline-flex items-center rounded-full bg-primary/90 px-3 py-1 text-xs font-medium text-white mb-4">
-                Featured
+                مميز
               </div>
               <h3 className="text-2xl font-bold mb-2 line-clamp-2 group-hover:text-primary-foreground/90 transition-colors">
                 {featuredArticle.title}
@@ -60,9 +60,9 @@ export default function FeaturedSection({ articles }: FeaturedSectionProps) {
                 {featuredArticle.excerpt}
               </p>
               <div className="flex items-center justify-between mt-4 text-sm text-white/70">
-                <span>By {featuredArticle.author_name}</span>
+                <span>بواسطة {featuredArticle.author_name}</span>
                 <span>
-                  {new Date(featuredArticle.published_at).toLocaleDateString()}
+                  {new Date(featuredArticle.published_at).toLocaleDateString('ar-EG')}
                 </span>
               </div>
             </div>
@@ -89,7 +89,7 @@ export default function FeaturedSection({ articles }: FeaturedSectionProps) {
                     />
                   ) : (
                     <div className="w-full h-full bg-muted flex items-center justify-center">
-                      <span className="text-xs text-muted-foreground">News</span>
+                      <span className="text-xs text-muted-foreground">أخبار</span>
                     </div>
                   )}
                 </div>
@@ -103,7 +103,7 @@ export default function FeaturedSection({ articles }: FeaturedSectionProps) {
                   <div className="flex items-center justify-between mt-2 text-xs text-muted-foreground">
                     <span>{article.author_name}</span>
                     <span>
-                      {new Date(article.published_at).toLocaleDateString()}
+                      {new Date(article.published_at).toLocaleDateString('ar-EG')}
                     </span>
                   </div>
                 </div>
