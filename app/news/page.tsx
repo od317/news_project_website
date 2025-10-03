@@ -28,6 +28,7 @@ export default async function NewsPage({ searchParams }: NewsPageProps) {
   try {
     if (search) {
       newsData = await newsService.searchNews(search, page, 12);
+      console.log(newsData)
     } else {
       newsData = await newsService.getNews({ 
         page, 

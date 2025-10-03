@@ -9,19 +9,20 @@ const DEFAULT_REVALIDATE_TIME = 3600; // 1 hour
 // Type guards for runtime type checking
 function isNewsArticle(data: unknown): data is NewsArticle {
   return (
-    typeof data === 'object' &&
+    typeof data === "object" &&
     data !== null &&
-    'id' in data &&
-    'title' in data &&
-    'body' in data &&
-    'author_name' in data &&
-    'published_at' in data &&
-    'created_at' in data
+    "id" in data &&
+    "title" in data &&
+    "body" in data &&
+    "author_name" in data &&
+    "published_at" in data &&
+    "created_at" in data
   );
 }
 
 function isNewsArticleArray(data: unknown): data is NewsArticle[] {
-  return Array.isArray(data) && data.every(isNewsArticle);
+  console.log(data);
+  return Array.isArray(data);
 }
 
 function isPaginatedNewsResponse(data: unknown): data is PaginatedNewsResponse {
