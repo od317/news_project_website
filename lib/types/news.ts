@@ -2,7 +2,7 @@
 export interface NewsArticle {
   id: number;
   title: string;
-  excerpt: string;
+  excerpt?: string;
   body?: string;
   image: string | null;
   author_name: string;
@@ -34,4 +34,24 @@ export interface NewsParams {
   pageSize?: number;
   search?: string;
   category?: string;
+}
+
+
+
+export interface NewsListItem {
+  id: number;
+  title: string;
+  excerpt: string; // Required in list
+  image: string | null;
+  author_name: string;
+  published_at: string;
+  created_at: string;
+}
+
+export interface NewsResource {
+  id: number;
+  title: string;
+  link: string;
+  created_at: string;
+  updated_at: string;
 }

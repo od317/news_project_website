@@ -61,13 +61,7 @@ export default async function NewsPage({ searchParams }: NewsPageProps) {
         </div>
       </section>
 
-      {/* Filters Section */}
-      <div className="container mx-auto px-4 py-6">
-        <NewsFilters
-          currentCategory={category}
-          currentSearch={search}
-        />
-      </div>
+
 
       {/* News Grid */}
       <section className="container mx-auto px-4 py-8">
